@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "Image Color Picker",
+  "version": "1.0",
+  "description": "Upload or paste an image to extract its CSS color.",
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

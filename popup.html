@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Color Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Color Picker</h1>
+    <input type="file" id="image-upload" accept="image/*" />
+    <p class="or-text">OR</p>
+    <textarea id="image-paste" placeholder="Paste an image here..."></textarea>
+    <div class="button-group">
+      <button id="generate-button" class="generate-btn">Generate Color</button>
+      <button id="clear-button" class="clear-btn">Clear</button>
+    </div>
+    <div id="image-preview">
+      <p class="preview-text">Image Preview:</p>
+      <img id="preview-image" src="#" alt="Image Preview" style="display: none;" />
+    </div>
+    <div id="color-box" style="display: none;">
+      <p class="color-text">Generated Color:</p>
+      <input type="text" id="color-value" readonly />
+      <button id="copy-button" class="copy-btn">Copy</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
